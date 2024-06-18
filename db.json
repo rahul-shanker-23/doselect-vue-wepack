@@ -2,7 +2,11 @@
     "dummyData": [
         {
             "id": 1,
-            "data": "Change this json to valid data for your project"
+            "data": "I ♥️ Vue"
+        },
+        {
+            "id":2,
+            "data": "Vue is a JavaScript framework for building user interfaces."
         }
     ]
 }
