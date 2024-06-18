@@ -13,7 +13,6 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import VueLogo from "./assets/logo.svg";
-import { APIURL } from "./API_URL";
 </script>
 <style>
 #app {

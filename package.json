@@ -28,6 +28,7 @@
     "babel-jest": "^29.7.0",
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest-environment-jsdom": "^29.7.0",
     "jest-junit": "^16.0.0",
     "json-server": "^0.17.0",
