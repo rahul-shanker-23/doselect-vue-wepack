@@ -1,6 +1,6 @@
 <template>
   <h1>Hello from Vue</h1>
-  <img src="/logo.svg" alt="" width="10%" />
+  <img :src="VueLogo" alt="" width="10%" />
   <nav>
     <RouterLink to="/home">Home</RouterLink>
     <RouterLink to="/about">About</RouterLink>
@@ -12,6 +12,8 @@
 
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
+import VueLogo from "./assets/logo.svg";
+import { APIURL } from "./API_URL";
 </script>
 <style>
 #app {

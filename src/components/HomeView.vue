@@ -12,7 +12,11 @@ import { ref, onMounted } from "vue";
 
 const data = ref("");
 onMounted(async () => {
-  const res = await axios.get(`${APIURL}dummyData`);
-  data.value = res.data[0].data;
+  try {
+    const res = await axios.get(`${APIURL}dummyData`);
+    data.value = res.data[0].data;
+  } catch {
+    data.value = "cannot call api, run command: npm run server";
+  }
 });
 </script>

@@ -45,6 +45,20 @@ module.exports = {
         test: /\.css$/,
         use: ["vue-style-loader", "css-loader"],
       },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 8192, // Files smaller than 8kb will be inlined as base64 URIs
+              name: "[path][name].[ext]", // Preserve original file name and path
+              outputPath: "images/", // Specify output directory for images
+              publicPath: "images/", // Specify public URL for images
+            },
+          },
+        ],
+      },
     ],
   },
 
